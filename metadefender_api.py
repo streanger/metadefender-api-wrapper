@@ -89,7 +89,9 @@ def metadefender_request(file_hash):
         "votes_down": response_json.get("votes", {}).get("down", 0),
         }
         
-    key_hash = avs_data.get('sha256', file_hash)
+    key_hash = avs_data.get('sha256', '')
+    if not key_hash:
+        key_hash = file_hash
     error_status = False
     return avs_data, key_hash, error_status
     
