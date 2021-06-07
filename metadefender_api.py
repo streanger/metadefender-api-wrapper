@@ -63,7 +63,7 @@ def metadefender_request(file_hash):
     '''metadefender request'''
     base_url = "https://api.metadefender.com/v4/hash/"
     url = urllib.parse.urljoin(base_url, file_hash)
-    headers = {'apikey': "7bf345ce28fddfe387e7d6f5243247a1"}
+    headers = {'apikey': "your_api_key"}
     response = requests.request("GET", url, headers=headers)
     response_json = response.json()
     
