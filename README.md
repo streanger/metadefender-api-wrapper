@@ -1,2 +1,2 @@
-# metadefender_api_wrapper
+# metadefender-api-wrapper
 wrapper for metadefender api
